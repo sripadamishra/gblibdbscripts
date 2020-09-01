@@ -1,0 +1,9 @@
+INSERT INTO user_details VALUES ('1', 'smishra', 'smishra', 'Sripada', 'Mishra','1');
+INSERT INTO user_details VALUES ('2', 'msil', 'msil', 'Manish', 'Sil','2');
+INSERT INTO user_details VALUES ('3', 'msingh', 'msingh', 'Manish', 'Singh','3');
+INSERT INTO user_details VALUES ('4', 'rverma', 'rverma', 'Ravijeet', 'Verma','4');
+INSERT INTO user_details VALUES ('5', 'apande', 'apande', 'Aniruddha', 'Deshpande','5');
+INSERT INTO user_details VALUES ('6', 'rghoshal', 'rghoshal', 'Rajarshi', 'Ghoshal','6');
+INSERT INTO user_details VALUES ('7', 'dray', 'dray', 'Debjit', 'Ray','7');
+INSERT INTO user_details VALUES ('8', 'gmundra', 'gmundra', 'Gaurav', 'Mundra','8');
+INSERT INTO user_details VALUES ('9', 'vagarwal', 'vagarwal', 'Vaibhab', 'Agarwal','9');

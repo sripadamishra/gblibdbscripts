@@ -1,0 +1,9 @@
+insert into roleInfo values('1','System Admin');
+insert into roleInfo values('2','Loan Analyst');
+insert into roleInfo values('3','Derivative Analyst');
+insert into roleInfo values('4','Program Manager');
+insert into roleInfo values('5','Risk Authorizer');
+insert into roleInfo values('6','Legal Authorizer');
+insert into roleInfo values('7','Treasury Authorizer');
+insert into roleInfo values('8','Document Verifier');
+insert into roleInfo values('9','Document Closer');

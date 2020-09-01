@@ -1,0 +1,5 @@
+CREATE TABLE statusInfo(
+statusId TINYINT NOT NULL AUTO_INCREMENT,
+statusName VARCHAR(20),
+PRIMARY KEY(statusId)
+);

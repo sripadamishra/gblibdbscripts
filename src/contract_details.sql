@@ -1,0 +1,20 @@
+ CREATE TABLE contract_details( 
+   id INT NOT NULL AUTO_INCREMENT,
+   contractId VARCHAR(20) NOT NULL,
+   parentContractId VARCHAR(20),
+   documentFileName VARCHAR(50) NOT NULL,
+   contractName VARCHAR(50),
+   legalEntityId INT,
+   legalEntityName VARCHAR(100),
+   counterPartyId INT,
+   contractTemplate VARCHAR(30),
+   contractStartDate DATE,
+   contractExpiryDate DATE,
+   contractTypeId INT,
+   contractSubTypeId INT,
+   isLIBOR BOOLEAN,
+   currStatusId TINYINT,
+   createdOn TIMESTAMP,
+   createdBy VARCHAR(10),
+   PRIMARY KEY ( id )
+);

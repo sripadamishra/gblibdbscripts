@@ -1,0 +1,20 @@
+CREATE TABLE loanContract_Financial_Details(
+loanContractFinancialId INT NOT NULL AUTO_INCREMENT,
+contractId VARCHAR(20) NOT NULL,
+counterPartyId INT NOT NULL,
+loanAmount DOUBLE NOT NULL,
+startDate DATE NOT NULL,
+maturityDate DATE NOT NULL,
+tenormonths INT NOT NULL,
+rateOfInterest DOUBLE NOT NULL,
+loanTypeId TINYINT NOT NULL,
+collateralInfo VARCHAR(100) NOT NULL,
+paymentSchedule TINYINT NOT NULL,
+borrowerName VARCHAR(50) NOT NULL,
+lenderName VARCHAR(50) NOT NULL,
+adminAgentName VARCHAR(50) NOT NULL,
+jointLeadArrangerName VARCHAR(100) NOT NULL,
+coSyndicationAgentName VARCHAR(100) NOT NULL,
+coDocumentationAgentName VARCHAR(100) NOT NULL,
+PRIMARY KEY(loanContractFinancialId)
+);
