@@ -1,4 +1,4 @@
- CREATE TABLE contract_details( 
+  CREATE TABLE ContractDetails( 
    id INT NOT NULL AUTO_INCREMENT,
    contractId VARCHAR(20) NOT NULL,
    parentContractId VARCHAR(20),
@@ -7,12 +7,14 @@
    legalEntityId INT,
    legalEntityName VARCHAR(100),
    counterPartyId INT,
+   counterPartyName VARCHAR(100),
    contractTemplate VARCHAR(30),
    contractStartDate DATE,
    contractExpiryDate DATE,
    contractTypeId INT,
    contractSubTypeId INT,
    isLIBOR BOOLEAN,
+   isAmendmentDoc BOOLEAN,
    currStatusId TINYINT,
    createdOn TIMESTAMP,
    createdBy VARCHAR(10),

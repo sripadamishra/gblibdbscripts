@@ -1,4 +1,4 @@
-CREATE TABLE counterParty_details(
+CREATE TABLE CounterPartyDetails(
  counterPartyId INT NOT NULL AUTO_INCREMENT,
  customerId INT NOT NULL,
  counterPartyName VARCHAR(50) NOT NULL,

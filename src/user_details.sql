@@ -1,4 +1,4 @@
-CREATE TABLE user_details(  
+CREATE TABLE UserDetails(  
    userId INT NOT NULL AUTO_INCREMENT,
    loginId VARCHAR(20) NOT NULL,
    passwordVal VARCHAR(256) NOT NULL,

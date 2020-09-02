@@ -1,0 +1,1 @@
+insert into legalEntity_details values('1','120','ABC Bank','','','','','');

@@ -1,0 +1,13 @@
+insert into CounterPartyDetails values('1','12345678','PNC BANK, NATIONAL ASSOCIATION','','','','','');
+insert into CounterPartyDetails values('2','12345679','CAPMARK BANK','','','','','');
+insert into CounterPartyDetails values('3','12345680','RRE CRESTWOOD HOLDINGS, LLC','','','','','');
+insert into CounterPartyDetails values('4','12345681','FREMONT INVESTMENT & LOAN','','','','','');
+insert into CounterPartyDetails values('5','12345682','SG MORTGAGE FINANCE CORP.','','','','','');
+insert into CounterPartyDetails values('6','12345683','SG MORTGAGE SECURITIES, LLC','','','','','');
+insert into CounterPartyDetails values('7','12345684','WELLS FARGO BANK, N.A.','','','','','');
+insert into CounterPartyDetails values('8','12345685','GREAT WOLF LODGE OF THE CAROLINAS, LLC','','','','','');
+insert into CounterPartyDetails values('9','12345686','CRÉDIT AGRICOLE CORPORATE AND INVESTMENT BANK','','','','','');
+insert into CounterPartyDetails values('10','12345687','DEUTSCHE BANK TRUST COMPANY AMERICAS','','','','','');
+insert into CounterPartyDetails values('11','12345688','DEUTSCHE BANK SECURITIES INC.','','','','','');
+insert into CounterPartyDetails values('12','12345689','WELLS CORE REIT – 7601 TECHNOLOGY WAY, LLC','','','','','');
+insert into CounterPartyDetails values('13','12345690','Fifth Third Bank','','','','','');

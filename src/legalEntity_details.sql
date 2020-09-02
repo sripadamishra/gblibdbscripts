@@ -1,5 +1,6 @@
 CREATE TABLE legalEntity_details(
  legalEntityId INT NOT NULL,
+ orgLegalEntityId INT,
  legalEntityName VARCHAR(50) NOT NULL,
  address VARCHAR(50),
  stateCode VARCHAR(10),
