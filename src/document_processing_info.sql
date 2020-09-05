@@ -1,6 +1,6 @@
-CREATE TABLE document_processing_info(
+CREATE TABLE DocumentProcessingInfo(
 documentProcessingId INT NOT NULL AUTO_INCREMENT,
-contractId VARCHAR(20) NOT NULL,
+contractId INT NOT NULL,
 impactedPageNo TINYINT,
 impactedParagraphNo TINYINT,
 startPosition INT,

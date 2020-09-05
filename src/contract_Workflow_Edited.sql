@@ -1,5 +1,5 @@
-CREATE TABLE ContractWorkflowVerify(
-workflowVerifyId INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE ContractWorkflowEdit(
+WorkflowEditId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
 createdOn TIMESTAMP,
 assignedTo VARCHAR(20),
@@ -7,5 +7,5 @@ updatedOn TIMESTAMP,
 updatedBy VARCHAR(20),
 statusId TINYINT,
 comments TEXT,
-PRIMARY KEY(workflowVerifyId)
+PRIMARY KEY(WorkflowEditId)
 );

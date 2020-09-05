@@ -1,0 +1,1 @@
+insert into ContractWorkflowIniatite values('1','1','2020-09-04 12:14:14','smishra','2020-09-04 12:14:14','','');

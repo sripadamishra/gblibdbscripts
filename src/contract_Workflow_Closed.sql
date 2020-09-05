@@ -1,10 +1,11 @@
-CREATE TABLE contract_Workflow_Closed(
-WorkflowClosedId INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE ContractWorkflowClose(
+workflowCloseId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
-startedOn TIMESTAMP NOT NULL,
-startedBy VARCHAR(20) NOT NULL,
-completedOn TIMESTAMP NOT NULL,
-completedBy VARCHAR(20) NOT NULL,
+createdOn TIMESTAMP,
+assignedTo VARCHAR(20),
+updatedOn TIMESTAMP,
+updatedBy VARCHAR(20),
+statusId TINYINT,
 comments TEXT,
-PRIMARY KEY(WorkflowClosedId)
+PRIMARY KEY(WorkflowCloseId)
 );

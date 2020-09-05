@@ -1,0 +1,1 @@
+insert into ContractWorkflowOCR values('2','1','2020-09-04 12:33:30','smishra','2020-09-04 01:33:30','smishra','1','sucessful');

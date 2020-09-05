@@ -1,0 +1,1 @@
+insert into ContractWorkflowScanUpload values('1','2020-09-04 10:10:10','system','2020-09-04 10:10:12','system','Success');

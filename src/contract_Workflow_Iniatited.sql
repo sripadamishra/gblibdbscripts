@@ -1,10 +1,11 @@
-CREATE TABLE contract_Workflow_Iniatited(
-WorkflowIniatitedId INT NOT NULL AUTO_INCREMENT,
-contractId VARCHAR(20) NOT NULL,
-createdOn TIMESTAMP NOT NULL,
-assignedTo VARCHAR(20) NOT NULL,
-updatedOn TIMESTAMP NOT NULL,
-updatedBy VARCHAR(20) NOT NULL,
+CREATE TABLE ContractWorkflowInitiate(
+workflowInitiateId INT NOT NULL AUTO_INCREMENT,
+contractId INT NOT NULL,
+createdOn TIMESTAMP,
+assignedTo VARCHAR(20),
+updatedOn TIMESTAMP,
+updatedBy VARCHAR(20),
 comments TEXT,
-PRIMARY KEY(WorkflowIniatitedId)
+statusId TINYINT,
+PRIMARY KEY(workflowInitiateId)
 );
