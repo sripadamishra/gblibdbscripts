@@ -1,0 +1,1 @@
+insert into regulatoryEvent values('1','LIBOR');

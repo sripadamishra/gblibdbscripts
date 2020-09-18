@@ -1,1 +1,4 @@
-insert into LoanFinancialDetails values('1','1','1','2350000.00','USD','2020-09-04','2023-09-04','36','2.06','1','','1','XYZ LLC','ABC Corp Bank','Agent','Joint Lead Arranger','Co Syndication Agent','Co Documentation Agent');
+insert into LoanFinancialDetails values('2','0','3','30000000.00','USD','2014-09-30','2034-11-11','240','2.06','1','','1','THE ENTITIES SET FORTH ON SCHEDULE VI','WELLS FARGO BANK, NATIONAL ASSOCIATION','','','','');
+insert into LoanFinancialDetails values('3','0','4','56000000.00','USD','2019-07-15','2022-07-15','36','4.00','2','','1','GREAT WOLF LODGE OF THE CAROLINAS, LLC','CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK','CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK','CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK','DEUTSCHE BANK SECURITIES INC.','DEUTSCHE BANK SECURITIES INC.');
+insert into LoanFinancialDetails values('4','0','5','10000000.00','USD','2016-03-29','2022-03-31','72','5.05','7','','1','BIRNER DENTAL MANAGEMENT SERVICES, INC.','GUARANTY BANK AND TRUST COMPANY','','','','');
+
