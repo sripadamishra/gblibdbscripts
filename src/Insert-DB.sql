@@ -1,3 +1,34 @@
+insert into CompletionResult values('1', 'Pending');
+insert into CompletionResult values('2', 'Completed');
+insert into CompletionResult values('3', 'Rejected');
+insert into CompletionResult values('4', 'Cancelled');
+
+insert into ContractRiskDetails values('1','1','1','R000123','This is Closed Risk Description','2');
+insert into ContractRiskDetails values('2','1','1','R000124','This is Open Risk Description','1');
+
+insert into ContractSubType values('1','1','Mortgage Loan');
+insert into ContractSubType values('2','1','Syndicate Loan');
+insert into ContractSubType values('3','1','Bilateral Loan');
+insert into ContractSubType values('4','1','Student Loan');
+insert into ContractSubType values('5','2','Currency Swap');
+insert into ContractSubType values('6','2','Interest Rate Swap');
+
+insert into ContractType values('1','Loan');
+insert into ContractType values('2','Derivative');
+
+insert into CounterPartyDetails values('1','12345685','GREAT WOLF LODGE OF THE CAROLINAS, LLC','','','','','');
+insert into DerivativeFinancialDetails values(
+'1','0','1','NEW YORK','New YORK Law','ISDA Master 2002','Y','Credit support Annex for Swap','Y','Y','Y','1000000.00','Y','Y','Y','Y','Y','Stocks','USD,GBP','USD','10','10000.00','20000.00','10');
+
+insert into DerivativeFinancialDetails values(
+'2','0','2','NEW YORK','New YORK Law','ISDA Master 1992','Y','N','Y','Y','Y','1000000.00','Y','Y','N','N','N','','USD','USD','15','5000.00','10000.00','5');
+
+insert into LoanFinancialDetails values('2','0','3','30000000.00','USD','2014-09-30','2034-11-11','240','2.06','1','','1','THE ENTITIES SET FORTH ON SCHEDULE VI','WELLS FARGO BANK, NATIONAL ASSOCIATION','','','','');
+insert into LoanFinancialDetails values('3','0','4','56000000.00','USD','2019-07-15','2022-07-15','36','4.00','2','','1','GREAT WOLF LODGE OF THE CAROLINAS, LLC','CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK','CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK','CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK','DEUTSCHE BANK SECURITIES INC.','DEUTSCHE BANK SECURITIES INC.');
+insert into LoanFinancialDetails values('4','0','5','10000000.00','USD','2016-03-29','2022-03-31','72','5.05','7','','1','BIRNER DENTAL MANAGEMENT SERVICES, INC.','GUARANTY BANK AND TRUST COMPANY','','','','');
+
+insert into regulatoryEvent values('1','LIBOR');
+
 insert into regulatoryEventDomainContext values('1','1','1','Agreement_Name','Agreement Name',
 '1','1','Agreement Name | Contract Name','Loan Agreement','followed by ("Agreement") or ("Loan Agreement")',
 '','This LOAN AGREEMENT (this “Loan Agreement”) dated as of July 15, 2019'
@@ -228,3 +259,38 @@ insert into regulatoryEventDomainContext values('46','1','1','Fallback_Trigger_W
 '1','1','Agent Unability of Quotes  from Banks in New York City','','',
 '',''
 );
+
+insert into roleInfo values('1','System Admin');
+insert into roleInfo values('2','Loan Analyst');
+insert into roleInfo values('3','Derivative Analyst');
+insert into roleInfo values('4','Program Manager');
+insert into roleInfo values('5','Risk Authorizer');
+insert into roleInfo values('6','Legal Authorizer');
+insert into roleInfo values('7','Treasury Authorizer');
+insert into roleInfo values('8','Document Verifier');
+insert into roleInfo values('9','Document Closer');
+
+
+insert into statusInfo values('1','ScanUpload');
+insert into statusInfo values('2','OCR');
+insert into statusInfo values('3','Initiate');
+insert into statusInfo values('4','Review');
+insert into statusInfo values('5','Edit');
+insert into statusInfo values('6','AuthLegal');
+insert into statusInfo values('7','AuthProgram');
+insert into statusInfo values('8','AuthRisk');
+insert into statusInfo values('9','AuthTreasury');
+insert into statusInfo values('10','Verify');
+insert into statusInfo values('11','Close');
+
+INSERT INTO Userdetails VALUES ('1', 'smishra', 'smishra', 'Sripada', 'Mishra','1');
+INSERT INTO Userdetails VALUES ('2', 'msil', 'msil', 'Manish', 'Sil','2');
+INSERT INTO Userdetails VALUES ('3', 'msingh', 'msingh', 'Manish', 'Singh','3');
+INSERT INTO Userdetails VALUES ('4', 'rverma', 'rverma', 'Ravijeet', 'Verma','4');
+INSERT INTO Userdetails VALUES ('5', 'apande', 'apande', 'Aniruddha', 'Deshpande','5');
+INSERT INTO Userdetails VALUES ('6', 'rghoshal', 'rghoshal', 'Rajarshi', 'Ghoshal','6');
+INSERT INTO Userdetails VALUES ('7', 'dray', 'dray', 'Debjit', 'Ray','7');
+INSERT INTO Userdetails VALUES ('8', 'gmundra', 'gmundra', 'Gaurav', 'Mundra','8');
+INSERT INTO Userdetails VALUES ('9', 'vagarwal', 'vagarwal', 'Vaibhab', 'Agarwal','9');
+
+
