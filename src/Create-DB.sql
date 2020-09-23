@@ -1,9 +1,9 @@
-Create Table CompletionResult(
+Create Table ebdb.CompletionResult(
 completionResultId INT NOT NULL AUTO_INCREMENT,
 completionResultName VARCHAR(15) NOT NULL,
 PRIMARY KEY(completionResultId)
 );
-CREATE TABLE ContractDetails( 
+CREATE TABLE ebdb.ContractDetails( 
    id INT NOT NULL AUTO_INCREMENT,
    contractId INT,
    parentContractId INT,
@@ -26,7 +26,7 @@ CREATE TABLE ContractDetails(
    createdBy VARCHAR(10),
    PRIMARY KEY ( id )
 );
-CREATE TABLE ContractRiskDetails(
+CREATE TABLE ebdb.ContractRiskDetails(
 contractRiskId INT NOT NULL AUTO_INCREMENT,
 contractId INT NOT NULL,
 counterPartyId INT,
@@ -35,18 +35,18 @@ riskDesc TEXT,
 resolutionStatus TINYINT NOT NULL, 
 PRIMARY KEY(contractRiskId)
 );
-CREATE TABLE ContractSubType (
+CREATE TABLE ebdb.ContractSubType (
 contractSubTypeId INT NOT NULL AUTO_INCREMENT,
 contractParentType INT NOT NULL,
 contractSubTypeName VARCHAR(20) NOT NULL,
 PRIMARY KEY(ContractSubTypeId)
 );
-CREATE TABLE ContractType (
+CREATE TABLE ebdb.ContractType (
 contractTypeId INT NOT NULL AUTO_INCREMENT,
 contractTypeName VARCHAR(20) NOT NULL,
 PRIMARY KEY(contractTypeId)
 );
-CREATE TABLE ContractWorkflowAuthLegal(
+CREATE TABLE ebdb.ContractWorkflowAuthLegal(
 WorkflowAuthLegalId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
 createdOn TIMESTAMP,
@@ -57,7 +57,7 @@ statusId TINYINT,
 comments TEXT,
 PRIMARY KEY(WorkflowAuthLegalId)
 );
-CREATE TABLE ContractWorkflowAuthProgram(
+CREATE TABLE ebdb.ContractWorkflowAuthProgram(
 WorkflowAuthProgramId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL, 
 createdOn TIMESTAMP,
@@ -68,7 +68,7 @@ statusId TINYINT,
 comments TEXT, 
 PRIMARY KEY(WorkflowAuthProgramId)
 );
-CREATE TABLE ContractWorkflowAuthRisk(
+CREATE TABLE ebdb.ContractWorkflowAuthRisk(
 workflowAuthRiskId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
 createdOn TIMESTAMP,
@@ -80,7 +80,7 @@ comments TEXT,
 PRIMARY KEY(workflowAuthRiskId)
 );
 
-CREATE TABLE ContractWorkflowAuthTreasury(
+CREATE TABLE ebdb.ContractWorkflowAuthTreasury(
 workflowAuthTreasuryId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
 createdOn TIMESTAMP,
@@ -92,7 +92,7 @@ comments TEXT,
 PRIMARY KEY(workflowAuthTreasuryId)
 );
 
-CREATE TABLE ContractWorkflowClose(
+CREATE TABLE ebdb.ContractWorkflowClose(
 workflowCloseId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
 createdOn TIMESTAMP,
@@ -104,7 +104,7 @@ comments TEXT,
 PRIMARY KEY(WorkflowCloseId)
 );
 
-CREATE TABLE ContractWorkflowEdit(
+CREATE TABLE ebdb.ContractWorkflowEdit(
 WorkflowEditId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
 createdOn TIMESTAMP,
@@ -116,7 +116,7 @@ comments TEXT,
 PRIMARY KEY(WorkflowEditId)
 );
 
-CREATE TABLE ContractWorkflowInitiate(
+CREATE TABLE ebdb.ContractWorkflowInitiate(
 workflowInitiateId INT NOT NULL AUTO_INCREMENT,
 contractId INT NOT NULL,
 createdOn TIMESTAMP,
@@ -128,7 +128,7 @@ statusId TINYINT,
 PRIMARY KEY(workflowInitiateId)
 );
 
-CREATE TABLE ContractWorkflowOCR(
+CREATE TABLE ebdb.ContractWorkflowOCR(
 WorkflowOCRId INT NOT NULL AUTO_INCREMENT,
 contractId INT NOT NULL,
 createdOn TIMESTAMP,
@@ -139,7 +139,7 @@ statusId TINYINT,
 comments TEXT,
 PRIMARY KEY(WorkflowOCRId)
 );
-CREATE TABLE ContractWorkflowReview(
+CREATE TABLE ebdb.ContractWorkflowReview(
 WorkflowReviewId INT NOT NULL AUTO_INCREMENT,
 contractId INT NOT NULL,
 createdOn TIMESTAMP,
@@ -150,7 +150,7 @@ statusId TINYINT,
 comments TEXT,
 PRIMARY KEY(WorkflowReviewId)
 );
-CREATE TABLE ContractWorkflowScanUpload(
+CREATE TABLE ebdb.ContractWorkflowScanUpload(
 contractId INT NOT NULL AUTO_INCREMENT,
 createdOn TIMESTAMP,
 assignedTo VARCHAR(20),
@@ -160,7 +160,7 @@ statusId TINYINT,
 comments TEXT,
 PRIMARY KEY(contractId)
 );
-CREATE TABLE ContractWorkflowVerify(
+CREATE TABLE ebdb.ContractWorkflowVerify(
 workflowVerifyId INT NOT NULL AUTO_INCREMENT,
 contractId VARCHAR(20) NOT NULL,
 createdOn TIMESTAMP,
@@ -171,7 +171,7 @@ statusId TINYINT,
 comments TEXT,
 PRIMARY KEY(workflowVerifyId)
 );
-CREATE TABLE CounterPartyDetails(
+CREATE TABLE ebdb.CounterPartyDetails(
  counterPartyId INT NOT NULL AUTO_INCREMENT,
  customerId INT NOT NULL,
  counterPartyName VARCHAR(50) NOT NULL,
@@ -182,7 +182,7 @@ CREATE TABLE CounterPartyDetails(
  fax VARCHAR(10),
  PRIMARY KEY ( counterPartyId )
 );
-CREATE TABLE DerivativeFinancialDetails(
+CREATE TABLE ebdb.DerivativeFinancialDetails(
 derivativeContractFinancialId INT NOT NULL AUTO_INCREMENT,
 contractId INT NOT NULL,
 counterPartyId INT,
@@ -209,7 +209,7 @@ thresholdAmount DOUBLE,
 variationMargin DOUBLE,
 PRIMARY KEY(derivativeContractFinancialId)
 );
-CREATE TABLE DocumentProcessingInfo(
+CREATE TABLE ebdb.DocumentProcessingInfo(
 documentProcessingId INT NOT NULL AUTO_INCREMENT,
 IsLIBOR CHAR,
 docPosition INT,
@@ -231,7 +231,7 @@ fallbackText TEXT,
 fallbackTextComplexity INT,
 PRIMARY KEY(documentProcessingId)
 );
-Create table DomainContractConfiguration(
+Create table ebdb.DomainContractConfiguration(
 domainContractConfigurationId INT NOT NULL AUTO_INCREMENT,
 contractId INT NOT NULL,
 regulatoryEventId INT NOT NULL,
@@ -239,7 +239,7 @@ domainContextDictionaryId VARCHAR(256) NOT NULL,
 isContextConfigurationActive BOOLEAN,
 PRIMARY KEY(domainContractConfigurationId,contractId,domainContextDictionaryId)
 );
-CREATE TABLE LoanFinancialDetails(
+CREATE TABLE ebdb.LoanFinancialDetails(
 loanContractFinancialId INT NOT NULL AUTO_INCREMENT,
 contractId INT NOT NULL,
 counterPartyId INT,
@@ -260,12 +260,12 @@ coSyndicationAgentName VARCHAR(100),
 coDocumentationAgentName VARCHAR(100),
 PRIMARY KEY(loanContractFinancialId)
 );
-Create table RegulatoryEvent(
+Create table ebdb.RegulatoryEvent(
 regulatoryEventId INT NOT NULL AUTO_INCREMENT,
 regulatoryEventName VARCHAR(20) NOT NULL,
 PRIMARY KEY(regulatoryEventId)
 );
-create table RegulatoryEventDomainContext(
+create table ebdb.RegulatoryEventDomainContext(
 regulatoryeventDomainContextId INT NOT NULL AUTO_INCREMENT,
 regulatoryEventId INT NOT NULL,
 contractType INT NOT NULL,
@@ -281,19 +281,19 @@ referenceExamples VARCHAR(256),
 PRIMARY KEY(regulatoryeventDomainContextId)
 );
 
-CREATE TABLE roleInfo(
+CREATE TABLE ebdb.RoleInfo(
 roleId TINYINT NOT NULL AUTO_INCREMENT,
 roleName VARCHAR(30),
 PRIMARY KEY(roleId)
 );
 
-CREATE TABLE statusInfo(
+CREATE TABLE ebdb.StatusInfo(
 statusId TINYINT NOT NULL AUTO_INCREMENT,
 statusName VARCHAR(20),
 PRIMARY KEY(statusId)
 );
 
-CREATE TABLE UserDetails(  
+CREATE TABLE ebdb.UserDetails(  
    userId INT NOT NULL AUTO_INCREMENT,
    loginId VARCHAR(20) NOT NULL,
    passwordVal VARCHAR(256) NOT NULL,
